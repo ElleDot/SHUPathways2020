@@ -110,6 +110,21 @@
 	/*  4. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
+          videoId: 'ShPQqM50Vz0',
+          events: {
+            'onReady': onPlayerReady}
+        });
+      }
+	
    $('.mu-video-play-btn').on('click', function(event) {
 	   
         event.preventDefault();
@@ -133,6 +148,9 @@
     // stop iframe if it is play while close the iframe window
 
     $('.mu-video-close-btn').click(function(){
+		
+		event.target.mute();
+		event.target.stop();
 
         $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
 
@@ -141,15 +159,15 @@
     // when click overlay area
 
      $('.mu-video-iframe-area').on('click', function(event) {
-	    
-	    event.preventDefault();
-	    
+		 
+		 event.preventDefault();
+		 
 		$('.mu-video-iframe-area').removeClass('mu-video-iframe-display');
 		
     });
 
 	$('.mu-video-iframe-area, .mu-video-iframe').on('click', function(e){
-	    e.stopPropagation();
+		e.stopPropagation();
 	});
 
 		
