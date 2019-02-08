@@ -109,21 +109,6 @@
 	/* ----------------------------------------------------------- */
 	/*  4. VIDEO POPUP
 	/* ----------------------------------------------------------- */
-
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-      function onYouTubePlayerAPIReady() {
-        player = new YT.Player('player', {
-          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque' },
-          videoId: 'ShPQqM50Vz0',
-          events: {
-            'onReady': onPlayerReady}
-        });
-      }
 	
    $('.mu-video-play-btn').on('click', function(event) {
 	   
@@ -148,11 +133,10 @@
     // stop iframe if it is play while close the iframe window
 
     $('.mu-video-close-btn').click(function(){
-		
-		event.target.mute();
-		event.target.stop();
 
-        $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
+        $('.mu-video-iframe').attr('src', '');
+		
+		$('.mu-video-iframe').attr('src', 'https://www.youtube.com/embed/dMvD8rg_Gzo')
 
     });
 
