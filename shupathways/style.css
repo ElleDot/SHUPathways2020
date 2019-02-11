@@ -264,6 +264,7 @@ button:focus {
 	float: left;
 	opacity: 0.94;
 	width: 100%;
+	height: calc(100vh);
 }
 
 .mu-logo-area {
