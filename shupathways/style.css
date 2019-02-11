@@ -284,6 +284,7 @@ button:focus {
 	float: left;
 	padding: 60px 0 150px;
 	width: 100%;
+	filter: drop-shadow(0 0 5px #000);
 }
 
 .mu-hero-featured-content {
