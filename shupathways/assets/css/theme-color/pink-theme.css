@@ -8,8 +8,11 @@ Author URI : http://www.markups.io/
 .mu-hero-overlay,
 .mu-video-overlay {
 	background-color: #AA52F0;/* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa52f0de, #2e3192de);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa52f0de, #2e3192de); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #aa52f0; /* Old browsers */
+	background: -moz-linear-gradient(left, #aa52f0 0%, #2e3192 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #aa52f0 0%,#2e3192 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #aa52f0 0%,#2e3192 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa52f0', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
 
 }
 

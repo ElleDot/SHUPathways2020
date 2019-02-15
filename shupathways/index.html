@@ -26,10 +26,18 @@
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/pink-theme.css" rel="stylesheet">
-
+	<!-- Lazy Loading -->
+	<link rel="stylesheet" href="assets/css/progressive-image.min.css">
+	
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet"> 
 	
+	<script>
+		/*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-webp-setclasses !*/
+!function(e,n,A){function o(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function t(e,n){return typeof e===n}function a(){var e,n,A,o,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(o=t(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=o:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=o),s.push((o?"":"no-")+l.join("-"))}}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var t=e.split("."),a=Modernizr[t[0]];if(2==t.length&&(a=a[t[1]]),"undefined"!=typeof a)return Modernizr;n="function"==typeof n?n():n,1==t.length?Modernizr[t[0]]=n:(!Modernizr[t[0]]||Modernizr[t[0]]instanceof Boolean||(Modernizr[t[0]]=new Boolean(Modernizr[t[0]])),Modernizr[t[0]][t[1]]=n),o([(n&&0!=n?"":"no-")+t.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=t(e,"undefined")||t(e.call,"undefined")?function(e,n){return n in e&&t(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),a(),o(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+	</script>
+	  
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -40,7 +48,8 @@
   <body>
   	
   	<!-- Start Header -->
-	<header id="mu-hero">
+	<header id="mu-hero" class="mu-hero progressive replace">
+		
 		<!-- Start menu  -->
 		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
 		  	<div class="container">
@@ -133,7 +142,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/prca.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/prca.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/prca.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/prca.jpg" alt="PRCA">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>PRCA</h3>
 											<p>PR Media Company</p>
@@ -148,7 +161,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/channel_4.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/channel_4.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/channel_4.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/channel_4.jpg" alt="Channel 4">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>4Talent</h3>
 											<p>Channel 4 Talent Incubator</p>
@@ -164,7 +181,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/ahc.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/ahc.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/ahc.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/ahc.jpg" alt="AHC">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>AHC</h3>
 											<p>Business Management Company</p>
@@ -180,7 +201,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/itv.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/itv.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/itv.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/itv.jpg" alt="ITV">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>ITV Recruitment</h3>
 											<p>ITV Careers Centre</p>
@@ -195,7 +220,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/dragonfly.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/dragonfly.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/dragonfly.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/dragonfly.jpg" alt="Dragonfly PR">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Dragonfly PR</h3>
 											<p>PR/Social Media Marketing Agency</p>
@@ -210,7 +239,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/a_swift.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/a_swift.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/a_swift.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/a_swift.jpg" alt="Aardvark Swift">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Aardvark Swift</h3>
 											<p>Recruitment Specialists</p>
@@ -226,7 +259,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/bbc.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/bbc.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/bbc.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/bbc.jpg" alt="BBC Breakfast">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>BBC Breakfast</h3>
 											<p>TV Programme</p>
@@ -242,7 +279,11 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/bbc_radio_5.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/bbc_radio_5.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/bbc_radio_5.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/bbc_radio_5.jpg" alt="BBC Radio 5">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>BBC Radio 5 Live</h3>
 											<p>Radio Station</p>
@@ -257,7 +298,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/bbc_radio_sheffield.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/bbc_radio_sheffield.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/bbc_radio_sheffield.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/bbc_radio_sheffield.jpg" alt="BBC Radio Sheffield">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>BBC Radio Sheffield</h3>
 											<p>Radio Station</p>
@@ -272,7 +317,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/shiver.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/shiver.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/shiver.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/shiver.jpg" alt="Shiver North">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Shiver North</h3>
 											<p>ITV Entertainment Producer</p>
@@ -287,7 +336,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/plusnet.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/plusnet.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/plusnet.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/plusnet.jpg" alt="Plusnet">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Plusnet</h3>
 											<p>Internet Service Provider</p>
@@ -302,7 +355,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/cmc.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/cmc.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/cmc.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/cmc.jpg" alt="Children’s Media Conference">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Children’s Media Conference</h3>
 											<p>Kids' Entertainment Event</p>
@@ -317,7 +374,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/doc_fest.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/doc_fest.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/doc_fest.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/doc_fest.jpg" alt="Sheffield Doc/Fest">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Sheffield Doc/Fest</h3>
 											<p>Leading Documentary Festival</p>
@@ -332,7 +393,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/NCS.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/ncs.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/ncs.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/ncs.jpg" alt="NCS The Challenge">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>NCS The Challenge</h3>
 											<p>Skill Development Programme</p>
@@ -347,7 +412,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/d_a_network.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/d_a_network.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/d_a_network.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/d_a_network.jpg" alt="Dentsu Aegis Network">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Dentsu Aegis Network</h3>
 											<p>Digital Communications Company</p>
@@ -362,7 +431,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/syfm_network.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/syfm_network.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/syfm_network.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/syfm_network.jpg" alt="South Yorkshire Filmmaker's Network">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>South Yorkshire Filmmaker’s Network</h3>
 											<p>Film Production Company</p>
@@ -377,7 +450,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/yorkshire_graduates.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/yorkshire_graduates.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/yorkshire_graduates.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/yorkshire_graduates.jpg" alt="Yorkshire Graduates and RISE">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Yorkshire Graduates and RISE</h3>
 											<p>Graduate Job Vacancy Site</p>
@@ -392,7 +469,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/springer_nature.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/springer_nature.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/springer_nature.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/springer_nature.jpg" alt="Springer Nature">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Springer Nature</h3>
 											<p>Academic Publishing Company</p>
@@ -407,7 +488,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/shu.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/shu.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/shu.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/shu.jpg" alt="SHU Enterprise Team">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>SHU Enterprise Team</h3>
 											<p>Hallam's Self-Employment Team</p>
@@ -422,7 +507,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/k7_media.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/k7_media.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/k7_media.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/k7_media.jpg" alt="K7 Media">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>K7 Media</h3>
 											<p>Global Media Company</p>
@@ -437,7 +526,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/gay_times.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/gay_times.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/gay_times.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/gay_times.jpg" alt="Gay Times">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Gay Times</h3>
 											<p>LGBTQ Magazine</p>
@@ -452,7 +545,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/run_with_hounds.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/run_with_hounds.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/run_with_hounds.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/run_with_hounds.jpg" alt="Run With Hounds">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Run With Hounds</h3>
 											<p>Creative and Production Company</p>
@@ -467,7 +564,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/warp.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/warp.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/warp.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/warp.jpg" alt="Warp Films">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>Warp Films</h3>
 											<p>Film &amp; TV Production Company</p>
@@ -482,7 +583,11 @@
 									
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/companylogos/optimised/webp/true_north.webp" alt="speaker img">
+										<picture>
+  											<source srcset="assets/images/companylogos/optimised/webp/true_north.webp" type="image/webp">
+  											<source srcset="assets/images/companylogos/optimised/true_north.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/companylogos/optimised/true_north.jpg" alt="True North Productions">
+										</picture>
 										<div class="mu-single-speakers-info">
 											<h3>True North Productions</h3>
 											<p>Factual TV Production Company</p>
@@ -516,7 +621,11 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<img class="" src="assets/images/optimised/about.webp" alt="Men Speaker">
+										<picture>
+  											<source srcset="assets/images/optimised/about.webp" type="image/webp">
+  											<source srcset="assets/images/optimised/jpg/about.jpg" type="image/jpeg"> 
+											<img srcset="assets/images/optimised/jpg/about.jpg" alt="Talking to a Company">
+										</picture>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -540,7 +649,7 @@
 		<!-- End About -->
 
 		<!-- Start Video -->
-		<section id="mu-video">
+		<section id="mu-video" class="progressive replace">
 			<div class="mu-video-overlay">
 				<div class="container">
 					<div class="row">
@@ -593,7 +702,11 @@
 								    	<ul>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/prca.webp" alt="event speaker">
+													<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/prca.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/prca.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/prca.jpg" alt="PRCA">
+													</picture>
 								    				<p class="mu-event-time">12.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -601,7 +714,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/a_swift.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/a_swift.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/a_swift.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/a_swift.jpg" alt="Aardvark Swift">
+													</picture>
 								    				<p class="mu-event-time">13.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -609,7 +726,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/d_a_network.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/d_a_network.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/d_a_network.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/d_a_network.jpg" alt="Dentsu Aegis Network">
+													</picture>
 								    				<p class="mu-event-time">14.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -617,7 +738,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/plusnet.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/plusnet.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/plusnet.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/plusnet.jpg" alt="Plusnet">
+													</picture>
 								    				<p class="mu-event-time">15.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -625,7 +750,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/rise.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/rise.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/rise.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/rise.jpg" alt="RISE">
+													</picture>
 								    				<p class="mu-event-time">15.30 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -637,7 +766,11 @@
 								    	<ul>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/true_north.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/true_north.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/true_north.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/true_north.jpg" alt="PRCA">
+													</picture>
 								    				<p class="mu-event-time">12.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -645,7 +778,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/warp.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/warp.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/warp.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/warp.jpg" alt="Warp Films">
+													</picture>
 								    				<p class="mu-event-time">13.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -653,7 +790,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/prca.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/prca.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/prca.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/prca.jpg" alt="PRCA">
+													</picture>
 								    				<p class="mu-event-time">14.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -661,7 +802,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/k7_media.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/k7_media.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/k7_media.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/k7_media.jpg" alt="K7 Media">
+													</picture>
 								    				<p class="mu-event-time">15.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -669,7 +814,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/doc_fest.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/doc_fest.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/doc_fest.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/doc_fest.jpg" alt="Sheffield Doc/Fest">
+													</picture>
 								    				<p class="mu-event-time">15.30 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -681,7 +830,11 @@
 								    	<ul>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/channel_4.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/channel_4.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/channel_4.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/channel_4.jpg" alt="PRCA">
+													</picture>
 								    				<p class="mu-event-time">12.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -689,7 +842,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/itv.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/itv.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/itv.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/itv.jpg" alt="ITV">
+													</picture>
 								    				<p class="mu-event-time">13.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -697,7 +854,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/cmc.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/cmc.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/cmc.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/cmc.jpg" alt="Children's Media Conference">
+													</picture>
 								    				<p class="mu-event-time">14.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -705,7 +866,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/shiver.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/shiver.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/shiver.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/shiver.jpg" alt="Shiver North">
+													</picture>
 								    				<p class="mu-event-time">15.00 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -713,7 +878,11 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/companylogos/optimised/webp/shu.webp" alt="event speaker">
+								    				<picture>
+  														<source srcset="assets/images/companylogos/optimised/webp/shu.webp" type="image/webp">
+  														<source srcset="assets/images/companylogos/optimised/shu.jpg" type="image/jpeg"> 
+														<img srcset="assets/images/companylogos/optimised/shu.jpg" alt="SHU Enterprise Team">
+													</picture>
 								    				<p class="mu-event-time">15.30 PM</p>
 								    				<h3>Talk</h3>
 								    				<span>By Speaker</span>
@@ -759,7 +928,7 @@
 		<!-- End Venue -->
 
 		<!-- Start Register  -->
-		<section id="mu-register">
+		<section id="mu-register" class="progressive replace">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -912,8 +1081,9 @@
 						<div class="mu-sponsors-area">
 							
 							<div class="mu-title-area">
-								<h2 class="mu-title">Past Speakers</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio, iusto soluta?</p>
+								<h2 class="mu-title">Past Events</h2>
+								<p>Over the years we’ve hosted a multitude of talented speakers to share their knowledge, experience and support for creative industries – from William J Connolly, editor of Gay Times Magazine and Cat Marshall, production supervisor at Warp Films to Nick Crossland from the BAFTA winning digital agency; Joi Polloi.</p>
+								<p>Stay tuned on our website and social media for new updates and confirmed speakers for this year’s spectacular line up!</p>
 							</div>
 							
 							<!-- Start spnonsors brand logo -->
@@ -922,73 +1092,121 @@
 								
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/ben-carlin.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/ben-carlin.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/ben-carlin.jpg" alt="Ben Carlin">
+											</picture>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/brian-baglow.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/brian-baglow.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/brian-baglow.jpg" alt="Brian Baglow">
+											</picture>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/calum-macdonald.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/calum-macdonald.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/calum-macdonald.jpg" alt="Calum Macdonald">
+											</picture>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-4.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/cat-marshall.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/cat-marshall.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/cat-marshall.jpg" alt="Cat Marshall">
+											</picture>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/dan-hodgson.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/dan-hodgson.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/dan-hodgson.jpg" alt="Dan Hodgson">
+											</picture>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/dan-walker.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/dan-walker.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/dan-walker.jpg" alt="Dan Walker">
+											</picture>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/debbie-howard.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/debbie-howard.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/debbie-howard.jpg" alt="Debbie Howard">
+											</picture>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/hannah-sanders.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/hannah-sanders.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/hannah-sanders.jpg" alt="Hannah Sanders">
+											</picture>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/jim-woods.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/jim-woods.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/jim-woods.jpg" alt="Jim Woods">
+											</picture>
 										</div>
 									</div>
 
 										<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-5.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/liam-hall.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/liam-hall.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/liam-hall.jpg" alt="Liam Hall">
+											</picture>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-6.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/mark-borkowski.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/mark-borkowski.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/mark-borkowski.jpg" alt="Mark Borkowski">
+											</picture>
 										</div>
 									</div>
 
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-7.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-8.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-9.png" alt="Brand Logo">
-										</div>
-									</div>
-
-										<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-1.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-2.png" alt="Brand Logo">
-										</div>
-									</div>
-
-									<div class="col-md-2 col-sm-4 col-xs-4">
-										<div class="mu-sponsors-single">
-											<img src="assets/images/sponsor-logo-3.png" alt="Brand Logo">
+											<picture>
+  												<source srcset="assets/images/pastspeakers/webp/nick-crossland.webp" type="image/webp">
+  												<source srcset="assets/images/pastspeakers/nick-crossland.jpg" type="image/jpeg"> 
+												<img srcset="assets/images/pastspeakers/nick-crossland.jpg" alt="Nick Crossland">
+											</picture>
 										</div>
 									</div>
 
@@ -1013,7 +1231,7 @@
 
 							<div class="mu-title-area">
 								<h2 class="mu-heading-title">Contact Us</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+								<p>Have a question or simply want to get in touch? Just fill in the contact form below, or you can reach out to us through Facebook, Twitter and Instagram via the social media icons located at the bottom of this page.</p>
 							</div>
 
 							<!-- Start Contact Content -->
@@ -1087,7 +1305,8 @@
     <script async src="assets/js/jquery.countdown.min.js"></script>
     <!-- Ajax contact form  -->
     <script defer src="assets/js/app.js"></script>
-  
+	<!-- Lazy Load -->
+	<script async src="assets/js/progressive-image.min.js"></script>
        
 	
     <!-- Custom js -->

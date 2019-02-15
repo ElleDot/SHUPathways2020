@@ -248,7 +248,7 @@ button:focus {
 /* HEADER */
 /*--------------------*/
 
-#mu-hero {
+.webp .mu-hero {
 	background-image: url("assets/images/optimised/head-featured-bg.webp");
 	display: inline;
 	float: left;
@@ -259,12 +259,26 @@ button:focus {
 	background-size: cover;
 }
 
+.no-webp .mu-hero {
+	background-image: url("assets/images/optimised/jpg/head-featured-bg.jpg");
+	display: inline;
+	float: left;
+	width: 100%;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* Lazy Load Head Image */
+.mu-hero.replace {
+	background-image: url("assets/images/optimised/jpg/head-featured-bg-tiny.jpf");
+}
+
 .mu-hero-overlay {
 	display: inline;
 	float: left;
-	opacity: 0.94;
+	opacity: 0.9;
 	width: 100%;
-	height: calc(100vh);
 }
 
 .mu-logo-area {
@@ -477,7 +491,7 @@ button:focus {
 /*--------------------*/
 
 
-#mu-video {
+.webp #mu-video {
 	background-image: url("assets/images/optimised/about-video-bg.webp");
 	background-attachment: fixed;
 	background-position: center center;
@@ -486,6 +500,20 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+}
+
+.no-webp #mu-video {
+	background-image: url("assets/images/optimised/jpg/about-video-bg.jpg");
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+#mu-video.replace {
+	background-image: url("assets/images/optimised/jpg/about-video-bg.jpf");
 }
 
 .mu-video-overlay {
@@ -692,7 +720,7 @@ button:focus {
 	text-align: right;
 }
 
-.mu-event-timeline ul li .mu-single-event img {
+.mu-event-timeline ul li .mu-single-event picture {
 	height: 80px;
 	width: 80px;
 	float: left;
@@ -700,7 +728,7 @@ button:focus {
 	margin-right: 15px;
 }
 
-.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event img {
+.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event picture {
 	float: right;
 	margin-right: 0;
 	margin-left: 15px;
@@ -991,7 +1019,7 @@ button:focus {
 /* REGISTER */
 /*--------------------*/
 
-#mu-register {
+.webp #mu-register {
 	background-image: url("assets/images/optimised/register-bg.webp");
 	background-position: center center;
 	background-size: cover;
@@ -1000,6 +1028,20 @@ button:focus {
 	float: left;
 	position: relative;
 	width: 100%;
+}
+
+.no-webp #mu-register {
+	background-image: url("assets/images/optimised/jpg/register-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#mu-register.replace {
+	background-image: url("assets/images/optimised/jpg/register-bg.jpf");
 }
 
 #mu-register::before {
@@ -1380,6 +1422,13 @@ button:focus {
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
+@media screen and (min-width:991px) {
+	
+	.mu-hero-overlay {
+		height: calc(100vh);
+	}
+}
+
 @media (max-width: 1199px) {
 
 	.mu-register-content {
@@ -1464,7 +1513,7 @@ button:focus {
 		border-color: transparent #fff transparent transparent;
 	}
 
-	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event img {
+	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event picture {
 		float: left;
 		margin-right: 15px;
 		margin-left: 0;
