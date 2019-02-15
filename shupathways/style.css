@@ -1123,6 +1123,41 @@ button:focus {
 	transition: all 0.5s;
 }
 
+.mu-shu-submit-btn {
+	background-color: transparent;
+	padding: 12px 75px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid #aa52f0;
+	color: #aa52f0;
+}
+
+.mu-shu-submit-btn:hover {
+	color: #fff;
+	border: 2px solid #aa52f0;
+	background-color: #aa52f0;
+}
+
+/*--------------------*/
+/* SHUCase */
+/*--------------------*/
+
+#mu-shucase {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-shucase-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
 
 /*--------------------*/
 /* SPONSORS */
