@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FAQ - Pathways 2018</title>
+<link href="shuPathwaysStyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--    Made by Erik Terwan    -->
+<!--   24th of November 2015   -->
+<!--    All rights reserved    -->
+<nav role="navigation">
+	<div class="row">
+  <div id="menuToggle">
+    <!--A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.-->
+    <input type="checkbox"/>
+    
+	<a href="index.html" class="navtitleicon"><img src="images/Text-LOGO-w-date-small1.png" alt="pathways 2018"/></a>
+	  
+    <!--Some spans to act as a hamburger.-->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+
+    <ul id="menu">
+		<a href="index.html"><li>HOME</li></a>
+		<a href="speakers.html"><li>SPEAKERS</li></a>
+		<a href="schedule.html"><li>SCHEDULE</li></a>
+		<a href="employers.html"><li>EMPLOYERS</li></a>
+		<a href="shucase.html"><li>SHUCASE</li></a>
+		<a href="faq.html"><li>FAQ</li></a>
+		<a href="social.html"><li>SOCIAL</li></a>
+		<a href="stream.html"><li>LIVESTREAM</li></a>
+		<a href="https://unihub.shu.ac.uk/students/events/detail/592794/pathways-creative-media-indust"><li>Staff/Student Register</li></a>
+		<a href="https://www.eventbrite.co.uk/e/pathways-2018-creative-media-networking-event-tickets-43251074127?aff=es2"><li>Guest Register</li></a>
+    </ul>
+  </div>
+		</div>
+</nav>
+
+	<div class="slideshowdiv">
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow1Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow2Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow3Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow4Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow5Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow6Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow7Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow8Alt.png" alt="placeholder"/>
+		<img class="autoslideshow" src="images/headerSlideshow/slideshow9Alt.png" alt="placeholder"/>
+	</div>
+	
+	<div class="row">
+		<div class="backgroundrectangle">
+			<div col-3>  </div><div class="col-3"><h1>FAQ</h1></div>
+			
+			<div class="faq"><h2>How can we contact you?</h2>
+			  <p><a href="mailto:sean_hooley@hotmail.co.uk">Send us your emails here.</a> Or contact us on our many social media pages.</p>
+			  <h2>How do we find our room on the day?</h2>
+              <p>Our room numbers are located on the schedule page. However, the numbering system maybe confusing for some people. If the room is <strong>9201</strong> for example, the <strong>9</strong> means the the building (which is always the cantor), the <strong>2</strong> would be the floor you are on. The floor for this instance would be the 2nd floor. The final two numbers <strong>01</strong> suggest the room number on that floor. There will be directions on the day and feel free to ask a member of our team. </p>
+			  <h2>How do I book an event?</h2>
+			  <p>Just go to the schedule page, pick your chosen event and click either 'book now' or 'guest booking' (book now is for Sheffield Hallam students and staff only). Then, pick your event and follow the instructions on screen.</p>
+			  <h2>Where is pathways located?</h2>
+            <p>Pathways is located in the Cantor building at Sheffield Hallam. If you are wondering where the building is based, please have a look at our map and address at the bottom of this page.</p></div>
+           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.613623381828!2d-1.4680342571505316!3d53.37691957875229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487982838da44e19%3A0x3df4f5797cbc90fb!2sCantor%2C+153+Arundel+St%2C+Sheffield+S1+2NT!5e0!3m2!1sen!2suk!4v1518962993179" width="100%"  frameborder="0" style="border:0"  allowfullscreen></iframe>
+       <div align="center"> <h1 style="">Address</h1> 
+         <p >Cantor Building, 153 Arundel St, <br> Sheffield <strong>S1 2NU</strong></p></div>
+    
+     
+		</div>
+	</div>
+
+
+<script>
+	var current = 0,
+    slides = document.getElementsByClassName("autoslideshow");
+
+	setInterval(function() {
+		for (var i = 0; i < slides.length; i++) {
+			slides[i].style.opacity = 0;
+		}
+  	current = (current != slides.length - 1) ? current + 1 : 0;
+  	slides[current].style.opacity = 1;
+	}, 4000);
+</script>
+	
+		<footer>
+		<div class="footer"><a href="https://www.facebook.com/hallampathways/"><img src="images/Facebook-Logo.png" style="height:40px; width: auto; padding-top: 5px; margin-left: 46%; "/></a><a href="https://twitter.com/SHUPathways?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/Twitter-Logo.png" style="height:40px; width: auto; padding-top: 5px;"/></a><a href="https://www.instagram.com/shupathways/?hl=en"><img src="images/Instagram-Logo.png" style="height:40px; width: auto; padding-top: 5px;"/></a><p style="color: #ffffff; float: right; margin-right: 10%;">Pathways 2018</p></div>
+	</footer>
+	
+</body>
+</html>

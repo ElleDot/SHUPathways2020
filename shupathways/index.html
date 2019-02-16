@@ -63,19 +63,26 @@
 			      </button>
 
 			      <!-- Logo -->
-			      <a class="navbar-brand" href="index.html">SHU Pathways 2019</a>
+			      <a class="navbar-brand" href="index.html">
+					  <picture>
+  					      <source srcset="assets/images/logo/pw_logo.webp" type="image/webp">
+  						  <source srcset="assets/images/logo/pw_logo.png" type="image/png"> 
+						  <img srcset="assets/images/logo/pw_logo.png" class="header-logo" alt="SHU Pathways 2019">
+					  </picture>
+				  </a>
 
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      	<ul class="nav navbar-nav mu-menu navbar-right">
-			      		<li><a href="#mu-hero">Home</a></li>
 						<li><a href="#mu-speakers">Pathways 2019</a></li>
 				        <li><a href="#mu-about">About</a></li>
 				        <li><a href="#mu-schedule">Schedule</a></li>
 						<li><a href="#mu-shucase">SHUCase</a></li>
+						<li><a href="#mu-venue">Venue</a></li>
 			            <li><a href="#mu-register">Register</a></li>
+						<li><a href="#mu-faq">FAQ</a></li>
 			            <li><a href="#mu-sponsors">Past Events</a></li>
 			            <li><a href="#mu-contact">Contact</a></li>
 			      	</ul>
@@ -94,8 +101,6 @@
 						<div class="mu-logo-area">
 							<!-- text based logo -->
 							<a class="mu-logo" href="#">SHU Pathways 2019</a>
-							<!-- image based logo -->
-							<!-- <a class="mu-logo" href="#"><img src="assets/images/logo.jpg" alt="logo img"></a> -->
 						</div>
 						<!-- End center Logo -->
 
@@ -979,25 +984,25 @@
 										</div>
 									</div>
 								</form>	
-									<p style="margin-bottom: 15px; margin-top: 15px;">Or register using the form below...</p>
+									<!--<p style="margin-bottom: 15px; margin-top: 15px;">Or register using the form below...</p>
 								<form class="mu-register-form">	
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">                
-												<input type="text" class="form-control" placeholder="Your Full Name" id="name" name="name" required="">
+												<input type="text" class="form-control" placeholder="Your Full Name" id="reg-name" name="name" required="">
 											</div>
 										</div>
 
 										<div class="col-md-6">
 											<div class="form-group">                
-												<input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" required="">
+												<input type="email" class="form-control" placeholder="Enter Your Email" id="reg-email" name="email" required="">
 											</div>     
 										</div>
 									</div>
 
 									<button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
 
-					            </form>
+					            </form>-->
 							</div>
 
 						</div>
@@ -1104,6 +1109,7 @@
 								<h2 class="mu-title">Past Events</h2>
 								<p>Over the years we’ve hosted a multitude of talented speakers to share their knowledge, experience and support for creative industries – from William J Connolly, editor of Gay Times Magazine and Cat Marshall, production supervisor at Warp Films to Nick Crossland from the BAFTA winning digital agency; Joi Polloi.</p>
 								<p>Stay tuned on our website and social media for new updates and confirmed speakers for this year’s spectacular line up!</p>
+								<button type="submit" class="mu-view-prev-btn" onclick="window.open('archive/2018/index.html','_blank')">Click Here to View Pathways 2018</button>
 							</div>
 							
 							<!-- Start spnonsors brand logo -->
@@ -1263,10 +1269,10 @@
 										<div id="form-messages"></div>
 											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
 												<div class="form-group">                
-													<input type="text" class="form-control" placeholder="Name" name="name" required>
+													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
 												</div>
 												<div class="form-group">                
-													<input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
 												</div>              
 												<div class="form-group">
 													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>

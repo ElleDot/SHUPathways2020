@@ -11,7 +11,7 @@
 	2. EVENT TIME COUNTER
 	3. MENU SMOOTH SCROLLING
 	4. VIDEO POPUP
-	5. SPEAKERS SLIDEER ( SLICK SLIDER )
+	5. SPEAKERS SLIDER ( SLICK SLIDER )
 	6. BOOTSTRAP ACCORDION 
 	7. MOBILE MENU CLOSE  
 	
@@ -28,13 +28,16 @@
 	/*  1. FIXED MENU
 	/* ----------------------------------------------------------- */
 
+	$('.navbar-brand').css('display','none');
 
 	jQuery(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 150) {
+    if ($(window).scrollTop() > 0) {
         $('.mu-navbar').addClass('mu-nav-show');
+		$('.navbar-brand').css('display','table');
         
 	    } else {
 	        $('.mu-navbar').removeClass('mu-nav-show');
+			$('.navbar-brand').css('display','none');
 	    }
 	});
 

@@ -288,6 +288,10 @@ button:focus {
 	width: 100%;
 }
 
+.header-logo {
+	width: 75px !important;
+}
+
 .mu-logo {
 	font-size: 35px;
 	font-family: 'Montserrat', sans-serif;
@@ -419,6 +423,10 @@ button:focus {
 	padding: 15px 15px;
 	font-size: 28px;
 	line-height: 20px;
+	height: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  	height: -moz-max-content;    /* Firefox/Gecko */
+  	height: -webkit-max-content; /* Chrome */
+	height: fit-content;
 }
 
 .mu-navbar .mu-menu li a {
@@ -434,6 +442,9 @@ button:focus {
 	color: #fff;
 }
 
+.navbar-right {
+	padding-top: 27px;
+}
 
 
 /*--------------------*/
@@ -1123,6 +1134,25 @@ button:focus {
 	transition: all 0.5s;
 }
 
+.mu-view-prev-btn {
+	background-color: #fff;
+	padding: 12px 75px;
+	margin-bottom: -30px;
+    margin-top: 30px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid #aa52f0;
+	color: #aa52f0;
+}
+
+.mu-view-prev-btn:hover {
+	color: #fff;
+	border: 2px solid #aa52f0;
+	background-color: #aa52f0;
+}
+
 .mu-shu-submit-btn {
 	background-color: transparent;
 	padding: 12px 75px;
@@ -1457,7 +1487,7 @@ button:focus {
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
-@media screen and (min-width:991px) {
+@media screen and (min-width:1199px) {
 	
 	.mu-hero-overlay {
 		height: calc(100vh);
@@ -1486,6 +1516,10 @@ button:focus {
 
 	.mu-apps-screenshot-slider .slick-next {
 		right: -25px;
+	}
+	
+	.navbar-right {
+		padding-top: 0;
 	}
 
 		
