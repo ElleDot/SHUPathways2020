@@ -337,7 +337,7 @@ button:focus {
 .mu-hero-featured-content {
 	display: inline;
 	float: right;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	text-align: center;
 	width: 100%;
 }
@@ -368,7 +368,7 @@ button:focus {
 .mu-event-counter-area {
 	display: inline;
 	float: left;
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 100%;
 }
 
@@ -1487,12 +1487,12 @@ button:focus {
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
-@media screen and (min-width:1199px) {
+/*@media screen and (min-width:1199px) {
 	
 	.mu-hero-overlay {
 		height: calc(100vh);
 	}
-}
+}*/
 
 @media (max-width: 1199px) {
 
