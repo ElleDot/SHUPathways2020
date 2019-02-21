@@ -46,18 +46,18 @@ Version: 1.0
   font-display: swap;
 }
 
-/* montserrat-regular - latin */
+/* montserrat-900 - latin */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('assets/fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('assets/fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('assets/fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  font-weight: 900;
+  src: url('assets/fonts/montserrat-v12-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Black'), local('Montserrat-Black'),
+       url('assets/fonts/montserrat-v12-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('assets/fonts/montserrat-v12-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('assets/fonts/montserrat-v12-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('assets/fonts/montserrat-v12-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('assets/fonts/montserrat-v12-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
   font-display: swap;
 }
 
@@ -277,7 +277,7 @@ button:focus {
 .mu-hero-overlay {
 	display: inline;
 	float: left;
-	opacity: 0.9;
+	/*opacity: 0.9;*/
 	width: 100%;
 }
 
@@ -290,6 +290,18 @@ button:focus {
 
 .header-logo {
 	width: 75px !important;
+}
+
+.mu-top-logo {
+	display: inline;
+	float: left;
+	padding: 5px 20px 5px 5px;
+	margin-left: -10px;	
+}
+
+.mu-top-logo-text {
+	margin-top: 15px;
+	display: inherit;
 }
 
 .mu-logo {
@@ -363,6 +375,7 @@ button:focus {
 	display: inline-block;
 	margin-top: 10px;
 	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .mu-event-counter-area {
@@ -732,11 +745,12 @@ button:focus {
 }
 
 .mu-event-timeline ul li .mu-single-event picture {
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	float: left;
 	border-radius: 50%;
 	margin-right: 15px;
+	margin-top: 12px;
 }
 
 .mu-event-timeline ul li:nth-child(2n+1) .mu-single-event picture {
@@ -1163,6 +1177,35 @@ button:focus {
 	transition: all 0.5s;
 	border: 2px solid #aa52f0;
 	color: #aa52f0;
+}
+
+.mu-book-here, .mu-guest-book {
+	background-color: transparent;
+	padding: 10px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 2px solid #aa52f0;
+	color: #aa52f0;
+}
+
+.mu-book-here:hover, .mu-guest-book:hover{
+	color: #fff;
+	border: 2px solid #aa52f0;
+	background-color: #aa52f0;
+}
+
+.mu-book-here {
+	width: 150px;
+    display: inline-block;
+    margin-right: 10px !important;
+}
+
+.mu-guest-book {
+	width: 200px;
+    display: inline-block;
 }
 
 .mu-shu-submit-btn:hover {
@@ -1675,6 +1718,16 @@ button:focus {
 
 
 @media (max-width: 640px){
+	
+	.mu-top-logo{
+    	float: none;
+		display: inline-table;
+    	margin: 5px -25px -5px -10px;
+	}
+	
+	.mu-top-logo-text {
+		display: none !important;
+	}
 	
 	.mu-event-counter-block {
 		height: 100px;
