@@ -275,6 +275,10 @@ button:focus {
 
 .no-webp .ie-logo {
 	display: block;
+	display: inline;
+	float: left;
+	padding: 5px 20px 5px 5px;
+	margin-left: -10px;	
 }
 
 /* Lazy Load Head Image */
