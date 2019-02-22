@@ -269,6 +269,14 @@ button:focus {
 	background-size: cover;
 }
 
+.ie-logo {
+	display: none;
+}
+
+.no-webp .ie-logo {
+	display: block;
+}
+
 /* Lazy Load Head Image */
 .mu-hero.replace {
 	background-image: url("assets/images/optimised/jpg/head-featured-bg-tiny.jpf");
