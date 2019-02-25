@@ -1992,6 +1992,7 @@ button:focus {
 	font-size: 10px;
 	position: absolute;
 	background-color: rgb(255, 255, 255);
+	z-index: 1000;
 }
 
 .ie-bar-none {
