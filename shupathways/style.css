@@ -276,8 +276,8 @@ button:focus {
 .no-webp .ie-logo {
 	display: inline;
 	float: left;
-	padding: 5px 20px 5px 5px;
-	margin-left: -10px;	
+	padding: 5px;
+	margin-left: -10px;
 }
 
 /* Lazy Load Head Image */
@@ -1979,5 +1979,22 @@ button:focus {
 	
 	
 	
+}
+
+.ie-bar {
+	padding: 10px;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	color: red;
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+}
+
+.ie-bar-none {
+	display: none;
 }
 
