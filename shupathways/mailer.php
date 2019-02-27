@@ -22,10 +22,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "tompaddon2@gmail.com";
+        $recipient = "info@shupathways.co.uk";
 
         // Set the email subject.
-        $subject = "New contact from $name";
+        $subject = "New contact from $name - Pathways 2019 Contact Form";
 
         // Build the email content.
         $email_content = "Name: $name\n";
