@@ -2004,9 +2004,9 @@ a.company-logo:hover {
 }
 
 .company-logo {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -2070,4 +2070,8 @@ a.logo-text {
 a.logo-text:hover {
     background-color: #c69aea;
     color: #000000;
+}
+
+.company-title:hover {
+	color: #aa52f0;
 }
