@@ -1,9 +1,7 @@
 /**	
-	* Template Name: Eventoz
-	* Version: 1.0	
-	* Template Scripts
-	* Author: MarkUps
-	* Author URI: http://www.markups.io/
+	* Name: SHU Pathways
+	* Author: Tom Padon
+	* Author URL: https://tompaddon.myportfolio.com
 
 	Custom JS
 	
@@ -13,16 +11,12 @@
 	4. VIDEO POPUP
 	5. SPEAKERS SLIDER ( SLICK SLIDER )
 	6. BOOTSTRAP ACCORDION 
-	7. MOBILE MENU CLOSE  
-	
-	
+	7. MOBILE MENU CLOSE  	
 **/
 
 
 
 (function( $ ){
-
-
 
 	/* ----------------------------------------------------------- */
 	/*  1. FIXED MENU
