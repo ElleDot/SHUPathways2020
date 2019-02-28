@@ -232,7 +232,15 @@
 								    		<li>
 								    			<div class="mu-single-event">
 													<a href="assets/images/companylogos/optimised/webp/a_swift.webp" class="progressive replace" onerror="this.onerror=null; this.href='assets/images/companylogos/optimised/a_swift.jpg'">
-														<img alt="img" src="assets/images/companylogos/optimised/a_swift.jpf" class="preview no-webp ie-fix" onerror="this.onerror=null; this.src='assets/images/companylogos/optimised/a_swift.jpg'">
+														<img alt="img" src="assets/images/companylogos/optimised/a_swift.jpf" class="preview no-webp ie-fix"
+															 
+															 onload="function(){
+																	 	if(this.class == "no-webp"){
+																	this.src='assets/images/companylogos/optimised/a_swift.jpg';}
+																	else{
+															 this.src='assets/images/companylogos/optimised/webp/a_swift.webp';
+																	}
+															}">
 													</a>
 								    				<p class="mu-event-time">11:00 - 12:00 | Cantor 9003</p>
 								    				<h3>Finding work in the Games Industry</h3>
