@@ -269,6 +269,10 @@ button:focus {
 	background-size: cover;
 }
 
+.no-webp .ie-fix {
+	filter: blur(0vw) !important;
+}
+
 .ie-logo {
 	display: none;
 }
@@ -755,19 +759,20 @@ button:focus {
 	text-align: right;
 }
 
-.mu-event-timeline ul li .mu-single-event picture {
+.mu-event-timeline ul li .mu-single-event a {
 	height: 100px;
 	width: 100px;
 	float: left;
-	border-radius: 50%;
 	margin-right: 15px;
 	margin-top: 12px;
+	cursor: default;
 }
 
-.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event picture {
+.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event a {
 	float: right;
 	margin-right: 0;
 	margin-left: 15px;
+	cursor: default;
 }
 
 .mu-event-timeline ul li .mu-single-event::before {
@@ -1249,7 +1254,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-	background-color: #fff;
+	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1284,7 +1289,7 @@ button:focus {
 /*--------------------*/
 
 #mu-faq {
-	background-color: #f8f8f8;
+	background-color: #fff;
 	display: inline;
 	float: left;
 	position: relative;
@@ -2010,15 +2015,6 @@ a.company-logo:hover {
     transition: opacity 0.2s ease-in-out;
 }
 
-.logo-image:hover {
-    -khtml-opacity: .50;
-    -moz-opacity:.50;
-    -ms-filter:"alpha(opacity=50)";
-    filter:alpha(opacity=50);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
-    opacity:.50;
-}
-
 .company-logo:hover {
     -khtml-opacity: .50;
     -moz-opacity:.50;
@@ -2053,7 +2049,7 @@ a.logo-text {
     background-color: #aa52f0;
     border: 4px solid #fff;
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 15px;
     filter: drop-shadow(0 0 0.75rem black);
     position: absolute;
     top: 50%;
