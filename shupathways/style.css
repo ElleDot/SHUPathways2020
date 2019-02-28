@@ -1253,28 +1253,28 @@ button:focus {
 /* SPONSORS */
 /*--------------------*/
 
-#mu-sponsors {
+#mu-past-events {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
 }
 
-.mu-sponsors-area {
+.mu-past-events-area {
 	display: inline;
 	float: left;
 	padding: 60px 0;
 	width: 100%;
 }
 
-.mu-sponsors-content {
+.mu-past-events-content {
 	display: inline;
 	float: left;
 	margin-top: 50px;
 	width: 100%;
 }
 
-.mu-sponsors-single {
+.mu-past-events-single {
 	background: #eee;
 	display: inline;
 	float: left;
