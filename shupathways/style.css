@@ -1547,13 +1547,6 @@ button:focus {
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
-/*@media screen and (min-width:1199px) {
-	
-	.mu-hero-overlay {
-		height: calc(100vh);
-	}
-}*/
-
 @media (max-width: 1199px) {
 
 	.mu-register-content {
@@ -1642,7 +1635,7 @@ button:focus {
 		border-color: transparent #fff transparent transparent;
 	}
 
-	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event picture {
+	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event a {
 		float: left;
 		margin-right: 15px;
 		margin-left: 0;
