@@ -1,0 +1,153 @@
+@charset "utf-8";
+body {
+	background-repeat: no-repeat;
+	background-image: url(SHUcase%20website%20content/Body%20content/Visual%20Assets/Background.png);
+	background-size: 100% 100%;
+}
+
+
+body h1 {
+    font-family: Arial Black;
+    color: #4D4D4D;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 4vw;
+}
+body p {
+    font-family: arial black;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 2vw;
+}
+body h3 {
+	font-family: arial black;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2vw;
+	border-radius: 25px;
+	background: #4D4D4D;
+	padding: 20px;
+	width: 10%;
+	height: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #B5B5B5;
+}
+body section div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	
+body h2 {
+    font-family: arial black;
+    color: #4D4D4D;
+    text-align: center;
+    float: none;
+    word-spacing: 20px;
+    font-size: 1.5vw;
+}
+
+
+
+body img {
+	border: 0;
+	margin-top: 0px;
+}
+
+
+
+
+body video {
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+#title {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+}
+#logo {
+	float: none;
+}
+body section {
+	padding-right: 0px;
+	float: none;
+	text-align: center;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #4d4d4d;
+  color: white;
+  opacity: 0.8;
+}
+
+.twitter {
+  background: #4d4d4d;
+  color: white;
+  opacity: 0.8;
+}
+
+.instagram {
+  background: #4d4d4d;
+  color: white;
+  opacity: 0.8;
+}
+
+.linkedin {
+  background: #4d4d4d;
+  color: white;
+  opacity: 0.8;
+}
+
+.arrow {
+  background: #4d4d4d;
+  color: white;
+  opacity: 0.8;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}

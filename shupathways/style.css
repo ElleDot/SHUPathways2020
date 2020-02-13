@@ -31,35 +31,7 @@ Author URL: https://tompaddon.myportfolio.com
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
-/* open-sans-regular - latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('assets/fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('assets/fonts/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('assets/fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-  font-display: swap;
-}
-
-/* montserrat-900 - latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  src: url('assets/fonts/montserrat-v12-latin-900.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Black'), local('Montserrat-Black'),
-       url('assets/fonts/montserrat-v12-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/montserrat-v12-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/montserrat-v12-latin-900.woff') format('woff'), /* Modern Browsers */
-       url('assets/fonts/montserrat-v12-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('assets/fonts/montserrat-v12-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700&display=swap');
 
 body,
 html {
@@ -889,7 +861,7 @@ button:focus {
     color: black;
     border: none;
     display: contents;
-    font-family: montserrat;
+    font-family: "Montserrat";
     font-size: 16px;
     text-align: left;
     position: inherit;
@@ -1207,7 +1179,7 @@ button:focus {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 .mu-view-prev-btn {
@@ -1586,7 +1558,9 @@ button:focus {
 	transition: all 0.5s;
 }
 
-
+.FAQLink {
+	text-decoration: underline;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */
@@ -2101,7 +2075,7 @@ a.logo-text {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     text-decoration: none;
-    font-family: montserrat;
+    font-family: "Montserrat";
     font-weight: 900;
 }
 
