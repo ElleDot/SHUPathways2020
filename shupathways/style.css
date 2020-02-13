@@ -1,7 +1,8 @@
 
 /*
-Name: SHU Pathways	
-Author: Tom Paddon
+Name: SHU Pathways 2020
+Adapted by: Elle Agars-Smith
+Original author: Tom Paddon
 Author URL: https://tompaddon.myportfolio.com
 */
 
@@ -922,7 +923,7 @@ button:focus {
 #social-top {
 	display: inline-flex;
     position: absolute;
-    margin: auto 175px auto auto;
+    margin: auto 25px auto auto;
     padding: 0;
     width: fit-content;
     right: 0;
@@ -1765,6 +1766,10 @@ button:focus {
 		line-height: 35px;
 		width: 40px;
 	}
+	
+	#social-top {
+		margin: auto 25% auto auto;
+	}
 
 		
 		
@@ -2107,4 +2112,138 @@ a.logo-text:hover {
 
 .company-title:hover {
 	color: #aa52f0;
+}
+
+/* THEME COLOURING */
+
+
+
+/*=======================================
+Author URL : https://tompaddon.myportfolio.com
+========================================*/
+
+.mu-hero-overlay,
+.mu-video-overlay {
+	background-color: #aa52f0;/* fallback for old browsers */
+	background: #aa52f0; /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(170, 82, 240, 0.6) 0%, rgba(46, 49, 146, 0.6) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(170, 82, 240, 0.6) 0%, rgba(46, 49, 146, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(170, 82, 240, 0.6) 0%, rgba(46, 49, 146, 0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa52f0', endColorstr='#2e3192',GradientType=1 ); /* IE6-9 */
+
+}
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-faq-content .panel-title a:hover,
+.mu-faq-content .panel-title a:focus,
+.mu-faq-content .panel-title a[aria-expanded="true"],
+.mu-faq-content .panel-title a>span,
+.mu-menu ul li a:hover,
+.mu-menu ul li a:focus,
+.mu-single-speakers-info p,
+.mu-single-speakers-social li a:hover,
+.mu-single-speakers-social li a:focus,
+.mu-logo,
+.mu-logo:hover,
+.mu-logo:focus,
+#mu-hero .navbar-default .navbar-brand,
+.mu-navbar .mu-menu li a:hover,
+.mu-navbar .mu-menu li a:focus,
+.mu-single-event .mu-event-time {
+	color: #AA52F0;
+}
+
+.mu-speakers-slider .slick-next,
+.mu-speakers-slider .slick-prev,
+#mu-venue,
+.mu-popular-price .mu-price-tag,
+.mu-navbar .navbar-toggle,
+.mu-navbar .navbar-toggle:hover,
+.mu-navbar .navbar-toggle:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover,
+.mu-schedule-menu li a:hover,
+.mu-schedule-menu li a:focus,
+.mu-schedule-menu li.active a,
+.mu-schedule-menu li.active a:hover,
+.mu-schedule-menu li.active a:focus {
+	background-color: #AA52F0;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #AA52F0;
+	color: #AA52F0;
+}
+
+.mu-contact-form .form-control:focus,
+.mu-schedule-menu li a {
+	border: 1px solid #662D91;    
+} 
+
+.mu-send-msg-btn,
+.mu-register-btn:hover,
+.mu-register-btn:focus,
+.mu-popular-price .mu-register-btn {
+	border: 1px solid #AA52F0;
+	background-color: #AA52F0;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #AA52F0;
+
+}
+
+.mu-reg-submit-btn:hover,
+.mu-reg-submit-btn:focus {
+	background-color: #AA52F0;
+	border: 2px solid #AA52F0;
+	color: #fff;
+}
+
+/* PROGRESSIVE IMAGE LOADING */
+
+@charset "utf-8";
+.progressive {
+	position:relative;
+	display:block;
+	overflow:hidden;
+	outline:none
+}
+
+.progressive img {
+	display:block;
+	width:100%;
+	max-width:none;
+	height:auto;
+	border:0 none
+}
+
+.progressive img.preview {
+	filter:blur(2vw);
+	transform:scale(1.05)
+}
+
+.progressive img.reveal {
+	position:absolute;
+	left:0;top:0;
+	will-change:transform,opacity;
+	animation:progressiveReveal 1s ease-out
+}
+
+@keyframes progressiveReveal {
+	0% {
+		transform:scale(1.05);
+		opacity:0
+	} 
+	100% {
+		transform:scale(1);
+		opacity:1
+	}
 }
