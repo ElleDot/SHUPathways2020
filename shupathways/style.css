@@ -1560,6 +1560,7 @@ button:focus {
 
 .FAQLink {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 /*--------------------*/
