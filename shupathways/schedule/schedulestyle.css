@@ -70,7 +70,9 @@
 .cell {transition: 0.5s;
 }
 
-.cell:hover {background-color: #aa52f0; color: white; cursor: default;}
+.rowOne:hover {background-color: #AA52f0; color: white; cursor: default;}
+.rowTwo:hover {background-color: #662D91; color: white; cursor: default;}
+.rowThree:hover {background-color: #2E3192; color: white; cursor: default;}
 
 table, th, td {
   border-collapse: collapse;
