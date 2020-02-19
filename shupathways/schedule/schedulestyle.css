@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+.marquee {
+	padding-top: 5px;
+	font-family: helvetica;
+	border-top: 1px solid #CBCBCB;
+	color: #0B0B0B;
+	cursor: default;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    margin-top: 0px;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 14.5px;
+    text-align: center;
+}
+
+.time:hover {
+	color: #aa52f0;
+	background-color: #F2F2F2;
+	transition: 0.2s;
+	cursor: default;
+}
+
+.table-container {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption {
+    padding-bottom: 25px;
+    font-family: montserrat;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.footer {
+    text-align: center;
+    font-family: helvetica;
+    line-height: 1.5;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.ftr-p {
+    font-family: 'open-sans', Helvetica, Arial, Sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cell {transition: 0.5s;
+}
+
+.cell:hover {background-color: #aa52f0; color: white; cursor: default;}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 11px;
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+.hdr {
+	background-color: white;
+	margin-left: 0;
+	height: 30px;
+	margin-top: 0;
+	text-align: center;
+	padding: 20px;
+	font-size: 32px;
+	font-family: Arial Black;
+	text-transform: capitalize;
+	font-weight: 1000;
+}
+
+.body .header.hdr {
+}
+
+.body {
+	width: 100%;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 21px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 1;
+    float: left;
+    background-color: #AA52F0;
+}
+
+.button:hover {
+    border: 1.7px solid #AA52F0;
+    background-color: #FFFFFF;
+    color: #AA52F0;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -10px;
+    transition: 0.3s;
+}
+
+.button:hover span {
+    padding-left: 15px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: auto;
+}
+.button:active {
+	border: 1.7px solid white;
+}
+
+.timetableEvent {
+	font-size: 14px;
+	text-align: center;
+}
+
+.pastCell {
+	
+	background-color: #eaeaea;
+	
+}
