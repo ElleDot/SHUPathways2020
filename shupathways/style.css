@@ -221,7 +221,7 @@ button:focus {
 /*--------------------*/
 
 .webp .mu-hero {
-	background-image: url("assets/images/optimised/head-featured-bg.webp");
+	background-image: url("assets/images/2020images/backgrounds/webp/pathways.webp");
 	display: inline;
 	float: left;
 	width: 100%;
@@ -232,7 +232,7 @@ button:focus {
 }
 
 .no-webp .mu-hero {
-	background-image: url("assets/images/optimised/jpg/head-featured-bg.jpg");
+	background-image: url("assets/images/2020images/backgrounds/pathways.jpg");
 	display: inline;
 	float: left;
 	width: 100%;
@@ -258,7 +258,7 @@ button:focus {
 
 /* Lazy Load Head Image */
 .mu-hero.replace {
-	background-image: url("assets/images/optimised/jpg/head-featured-bg-tiny.jpf");
+	background-image: url("assets/images/2020images/backgrounds/pathways.jpf");
 }
 
 .mu-hero-overlay {
