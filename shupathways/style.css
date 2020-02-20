@@ -495,15 +495,13 @@ button:focus {
 	width: 100%;
 }
 
-
-
 /*--------------------*/
 /* VIDEO */
 /*--------------------*/
 
 
 .webp #mu-video {
-	background-image: url("assets/images/optimised/about-video-bg.webp");
+	background-image: url("assets/images/2020images/backgrounds/webp/videobg.webp");
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -514,7 +512,7 @@ button:focus {
 }
 
 .no-webp #mu-video {
-	background-image: url("assets/images/optimised/jpg/about-video-bg.jpg");
+	background-image: url("assets/images/2020images/backgrounds/videobg.jpg");
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -524,7 +522,7 @@ button:focus {
 }
 
 #mu-video.replace {
-	background-image: url("assets/images/optimised/jpg/about-video-bg.jpf");
+	background-image: url("assets/images/2020images/backgrounds/videobg.jpf");
 }
 
 .mu-video-overlay {
@@ -1491,8 +1489,6 @@ button:focus {
 	      border-radius: 4px;
 }
 
-
-
 /*--------------------*/
 /* FOOTER */
 /*--------------------*/
@@ -2149,6 +2145,10 @@ Author URL : https://tompaddon.myportfolio.com
 .mu-schedule-menu li.active a:hover,
 .mu-schedule-menu li.active a:focus {
 	background-color: #AA52F0;
+}
+
+.mu-schedule-menu li.active a:hover {
+	background-color: #662D91;
 }
 
 .mu-social-media a:hover,
